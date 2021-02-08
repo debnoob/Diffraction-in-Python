@@ -9,7 +9,7 @@ def single_slit_diffraction_intensity (slit_width, wavelength, screen_distance, 
     Takes in slit_width, wavelength, screen distance and a numpy array X(an array of distances from the center).
     Outputs an array of normalized intensities corresponding to X.
   """
-  return ((np.sin((np.pi*slit_width*X)/(wavelength*screen_distance)))/((np.pi*slit_width*X)/(wavelength*screen_distance)))**2
+  return ((np.sin((np.pi*slit_width*X)/(wavelength)))/((np.pi*slit_width*X)/(wavelength)))**2
 
 def double_slit_diffraction_intensity (slit_width, wavelength, screen_distance, distance_between_slits,  X) :
   """
